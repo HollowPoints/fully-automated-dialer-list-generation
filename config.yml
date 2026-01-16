@@ -14,15 +14,11 @@ email:
   enabled: true
   method: 'outlook_com'
   to:
-  - eleni.chatzikosta@sioufaslaw.gr
-  cc:
-  - milesid@sioufaslaw.gr
-  - grigorios.athanasiou@sioufaslaw.gr
-  - nikolaos.chaldogeridis@sioufaslaw.gr
-  - maria.diamanti@sioufaslaw.gr
   
+  cc:
+
   bcc: 
-  - grigoris.kalampoukas@sioufaslaw.gr
+  
   
   subject: 'Κωτσόβολος Dialer Lists – {run_date}'
   body: |
@@ -44,5 +40,6 @@ email:
     Τηλ:
 
  
+
 
 
