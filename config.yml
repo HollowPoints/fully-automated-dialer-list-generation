@@ -1,0 +1,48 @@
+paths:
+  input_dir_a: '\\lawoffice\Applications\SSRS\EXPORTS\Collection\SSRS Thessaloniki\Kotsovolos'
+  input_dir_b: '\\lawoffice\Applications\SSRS\EXPORTS\Collection\SSRS Thessaloniki\Ανάλυση Δεδομένων Κωτσόβολου'
+  output_root: 'Outputs'
+  log_dir: 'logs'
+
+input:
+  pattern: '\.xlsx$'
+
+pipeline:
+  script: 'pipeline.R'
+
+email:
+  enabled: true
+  method: 'outlook_com'
+  to:
+  - eleni.chatzikosta@sioufaslaw.gr
+  cc:
+  - milesid@sioufaslaw.gr
+  - grigorios.athanasiou@sioufaslaw.gr
+  - nikolaos.chaldogeridis@sioufaslaw.gr
+  - maria.diamanti@sioufaslaw.gr
+  
+  bcc: 
+  - grigoris.kalampoukas@sioufaslaw.gr
+  
+  subject: 'Κωτσόβολος Dialer Lists – {run_date}'
+  body: |
+    Καλησπέρα σας,
+    
+    Επισυνάπτονται οι λίστες του Dialer, καθώς και η περιγραφή τους, για τον Κωτσόβολο.({run_date})
+    
+    Επισυναπτόμενο και το χαρτοφυλάκιο της Κύπρου επιμερισμένο σε 3 κατηγορίες.
+    Καθώς και το σύνολο του χαρτοφυλακίου του Franchise.
+    
+    Για οποιαδήποτε πληροφορία ή διευκρίνηση βρίσκομαι στην διάθεση σας
+    
+    Με εκτίμηση,
+    
+    Καλαμπούκας Γρηγόριος Ρόμπερτ
+    Επιχειρησιακός Αναλυτής
+    Κατάστημα Θεσσαλονίκης
+    
+    Τηλ:
+
+ 
+
+
