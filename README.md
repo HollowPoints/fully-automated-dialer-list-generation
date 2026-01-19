@@ -1,7 +1,7 @@
 # fully-automated-dialer-list-generation
 
 
-This repository contains a fully automated R pipeline for generating dialer-ready contact lists on a scheduled basis.
+This repository contains a fully automated R pipeline for generating dialer-ready contact lists on a scheduled basis with Windows Scheduler.
 
 The project is designed to run unattended, transform raw input data into a clean dialer list, and deliver the output automatically via email or file export.
 
